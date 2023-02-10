@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+/*
+    font-family: 'Inter", sans-serif;
+    font-family: 'Assistant', sans-serif;
+*/
+
+body {
+    background-color: #2f6019;
+}
+
+
+
+div{
+    background-color: seashell;
+    border-radius: 20px;
+    text-align: center;
+    word-wrap: normal;
+    font-size: 1.5rem;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+
+.body{
+    padding-bottom: 3 rem;
+}
+
+footer {
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+nav{
+    position: sticky;
+    top:0;
+    background-color: #2f6019;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    font-size: 3em;
+    grid-gap: 10px;
+    /*margin: 5px, 7px;*/
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 0;
+    grid-template-areas: 
+    "Home Skills"
+    "Interests Contact";
+    font-family: 'Inter', sans-serif;
+
+}
+
+li{
+    border-radius: 20px;
+    background-color: seashell;
+    padding: auto;
+    text-align: center;
+    border: 3px dotted #2F0601;
+}
+
+a {
+    Color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+a:hover{
+    color:rgb(43, 40, 40);
+}
+
+#a1 {
+    grid-area: Home;
+}
+#a2{
+    grid-area: Skills;
+}
+#a3{
+    grid-area: Interests;
+}
+#a4{
+    grid-area: Contact;
+}
+
+img{
+    align-items: center;
+    width: 60%;
+    border-radius: 20px;
+    padding: 10%;
+    margin: 10px;
+    border: 7px dotted #2F0601;
+    /*border: 7px dotted #f2f6d0;*/
+    background-color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 9fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: seashell;
+    border-radius: 20px;
+}
+
+#gridImage{
+    border: none;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 10%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    text-align: center;
+    justify-content: center;
+}
+
+#ContactHead {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+
+@media screen and ( min-width : 800px ) {
+    ul { grid-template-areas: "Home Skills Interests Contact";
+    }
+    img{
+        max-width: 450px;
+    }
+    p{
+        padding-left: 10%; 
+        padding-right:10%;
+    }
+    /*#site{ ;
+    }*/
+   }
